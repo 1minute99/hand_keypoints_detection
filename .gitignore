@@ -1,0 +1,11 @@
+.venv/
+datasets/
+cali_dataset/
+data/
+runs/
+*.pt
+*.pth
+*.whl
+*.onnx
+*.engine
+*.cache
