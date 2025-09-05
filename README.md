@@ -89,7 +89,7 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
 - Significantly slower inference (≈30 FPS), which is less ideal for real-time applications.  
 
 ---
-## 🌁  Inference Visualization
+
 | Heatmap Model | Yolo Model |
 |---------------|------------|
 | ![Heatmap Model](figures/inf_1_heat.png) | ![Yolo Model](figures/inf_1_yolo.png) |
@@ -150,6 +150,7 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
   https://www.ultralytics.com/license
 
 > Third-party software and trademarks are subject to their respective licenses.
+
 
 
 
