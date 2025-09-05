@@ -65,8 +65,6 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
 - **Average Latency**: 19.35 ms  
 - **Inference FPS**: 51.67
 
-![Example 1](figures/inf_1_heat.png) | ![Example 2](figures/inf_2_heat.png)
-
 **Interpretation**:  
 - Excellent accuracy at practical thresholds (PCK@5px ≈ 84%).  
 - Real-time inference (>50 FPS) on Jetson Orin Nano without INT8 quantization.  
@@ -86,17 +84,19 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
 - **Average Latency**: 32.72 ms  
 - **Inference FPS**: 30.56
 
-![Example 1](figures/inf_1_yolo.png) | ![Example 2](figures/inf_2_yolo.png)
-
 **Interpretation**:  
 - Lower accuracy across all thresholds compared to the heatmap model.  
 - Significantly slower inference (≈30 FPS), which is less ideal for real-time applications.  
 
 ---
+## 🌁  Inference Visualization
+![Heatmap Model](figures/inf_1_heat.png) ![Yolo Model](figures/inf_2_heat.png)
+![Heatmap_Model](figures/inf_1_yolo.png) ![Yolo Model](figures/inf_2_yolo.png)
+---
 
 ## 🔍 Comparative Analysis
 - ✅ **Accuracy**: Heatmap model outperforms YOLO (e.g., PCK@5px: 83.8% vs 77.2%).  
-- ✅ **Latency**: Heatmap model is faster (19.35 ms vs 32.72 ms).  
+- ✅ **Latency**: Heatmap model is faster (19.35 m🌁s vs 32.72 ms).  
 - ✅ **Deployment**: Heatmap model achieves real-time inference (>50 FPS).  
 - ⚡ **Conclusion**: Heatmap-based architecture with MobileNetV3 backbone is more **efficient and accurate** for hand keypoints detection on edge devices.  
 
@@ -145,6 +145,7 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
   https://www.ultralytics.com/license
 
 > Third-party software and trademarks are subject to their respective licenses.
+
 
 
 
