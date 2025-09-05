@@ -136,7 +136,7 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
 
 ---
 
-## License & Attribution
+## 📜 License & Attribution
 
 - **Code**: MIT License (see `LICENSE`).
 - **Dataset**: Ultralytics **Hand Keypoints Dataset** — **CC BY-NC-SA 4.0**  
@@ -145,6 +145,7 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
   https://www.ultralytics.com/license
 
 > Third-party software and trademarks are subject to their respective licenses.
+
 
 
 
