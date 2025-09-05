@@ -134,6 +134,17 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
      - Alternative: **One-stage, multi-instance** approach with **instance-aware heatmaps** (e.g., associative embedding / tag heatmaps) to separate hands without an explicit detector.  
      - Add **tracking** across frames (Hungarian matching on keypoint centroids / OKS) for stable multi-hand IDs.
 
+---
+
+## License & Attribution
+
+- **Code**: MIT License (see `LICENSE`).
+- **Dataset**: Ultralytics **Hand Keypoints Dataset** — **CC BY-NC-SA 4.0**  
+  https://docs.ultralytics.com/datasets/pose/hand-keypoints/
+- **YOLO Components**: Ultralytics **AGPL-3.0** (or commercial license)  
+  https://www.ultralytics.com/license
+
+> Third-party software and trademarks are subject to their respective licenses.
 
 
 
