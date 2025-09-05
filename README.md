@@ -133,6 +133,14 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
 
 ---
 
+## 🔧 Limitations & Future Work
+
+**Single-hand only (no hand detector stage)**  
+   - **Current limitation**: The pipeline predicts keypoints **directly** without a preceding **hand detection** stage. If multiple hands appear, **only one** is handled reliably, and overlapping hands are not separated.  
+   - **Plan**: Adopt a **two-stage** pipeline — (A) lightweight hand detector (e.g., YOLO-hand) → cropped ROI per hand, then (B) per-instance keypoints model on each ROI.  
+     - Alternative: **One-stage, multi-instance** approach with **instance-aware heatmaps** (e.g., associative embedding / tag heatmaps) to separate hands without an explicit detector.  
+     - Add **tracking** across frames (Hungarian matching on keypoint centroids / OKS) for stable multi-hand IDs.
+
 
 
 
