@@ -84,7 +84,9 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
 | 10px      | 0.8895 |
 
 - **Average Latency**: 32.72 ms  
-- **Inference FPS**: 30.56  
+- **Inference FPS**: 30.56
+
+![Example 1](figures/inf_1_yolo.png) | ![Example 2](figures/inf_2_yolo.png)
 
 **Interpretation**:  
 - Lower accuracy across all thresholds compared to the heatmap model.  
@@ -130,6 +132,7 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
 - Demonstrates an **End-to-End deployment pipeline** from model design → training → optimization → deployment.  
 
 ---
+
 
 
 
