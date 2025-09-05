@@ -92,8 +92,8 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
 ## 🌁  Inference Visualization
 | Heatmap Model | Yolo Model |
 |---------------|------------|
-| ![Heatmap Model](figures/inf_1_heat.png) | ![Yolo Model](figures/inf_2_heat.png) |
-| ![Heatmap_Model](figures/inf_1_yolo.png) | ![Yolo Model](figures/inf_2_yolo.png) |
+| ![Heatmap Model](figures/inf_1_heat.png) | ![Yolo Model](figures/inf_1_yolo.png) |
+| ![Heatmap_Model](figures/inf_2_heat.png) | ![Yolo Model](figures/inf_2_yolo.png) |
 ---
 
 ## 🔍 Comparative Analysis
@@ -147,6 +147,7 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
   https://www.ultralytics.com/license
 
 > Third-party software and trademarks are subject to their respective licenses.
+
 
 
 
