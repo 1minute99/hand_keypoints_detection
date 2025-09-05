@@ -54,7 +54,7 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
 ## 🚀 Results
 
 ### 🔹 Heatmap Model (TensorRT FP16)
-| Threshold | PCK |            ![Example](figures/inf_1_heat.png)
+| Threshold | PCK |
 |-----------|------|
 | 1px       | 0.2065 |
 | 3px       | 0.6998 |
@@ -62,10 +62,10 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
 | 7px       | 0.8954 |
 | 10px      | 0.9331 |
 
-
-
 - **Average Latency**: 19.35 ms  
-- **Inference FPS**: 51.67  
+- **Inference FPS**: 51.67
+
+![Example 1](figures/inf_1_heat.png) | ![Example 2](figures/inf_2_heat.png)
 
 **Interpretation**:  
 - Excellent accuracy at practical thresholds (PCK@5px ≈ 84%).  
