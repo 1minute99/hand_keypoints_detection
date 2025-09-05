@@ -62,7 +62,7 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
 | 7px       | 0.8954 |
 | 10px      | 0.9331 |
 
-![Example](figures/inf_vis_1.png)
+![Example](figures/inf_1_heat.png)
 
 - **Average Latency**: 19.35 ms  
 - **Inference FPS**: 51.67  
@@ -130,4 +130,5 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
 - Demonstrates an **End-to-End deployment pipeline** from model design → training → optimization → deployment.  
 
 ---
+
 
