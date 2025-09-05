@@ -97,15 +97,8 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
 ## 🔍 Comparative Analysis
 - ✅ **Accuracy**: Heatmap model outperforms YOLO (e.g., PCK@5px: 83.8% vs 77.2%).  
 - ✅ **Latency**: Heatmap model is faster (19.35 ms vs 32.72 ms).  
-- ✅ **Deployment**: Heatmap model achieves real-time inference (>50 FPS) without INT8 quantization.  
+- ✅ **Deployment**: Heatmap model achieves real-time inference (>50 FPS).  
 - ⚡ **Conclusion**: Heatmap-based architecture with MobileNetV3 backbone is more **efficient and accurate** for hand keypoints detection on edge devices.  
-
----
-
-## 📷 Inference Examples
-*(Sample images will be attached here)*  
-- Side-by-side comparison: Heatmap vs YOLO.  
-- Visualized keypoints overlayed on input images.  
 
 ---
 
@@ -140,6 +133,7 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
    - **Plan**: Adopt a **two-stage** pipeline — (A) lightweight hand detector (e.g., YOLO-hand) → cropped ROI per hand, then (B) per-instance keypoints model on each ROI.  
      - Alternative: **One-stage, multi-instance** approach with **instance-aware heatmaps** (e.g., associative embedding / tag heatmaps) to separate hands without an explicit detector.  
      - Add **tracking** across frames (Hungarian matching on keypoint centroids / OKS) for stable multi-hand IDs.
+
 
 
 
