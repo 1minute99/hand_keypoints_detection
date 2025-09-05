@@ -93,6 +93,8 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
 | Heatmap Model | Yolo Model |
 |---------------|------------|
 | ![Heatmap Model](figures/inf_1_heat.png) | ![Yolo Model](figures/inf_1_yolo.png) |
+| Heatmap Model | Yolo Model |
+|---------------|------------|
 | ![Heatmap_Model](figures/inf_2_heat.png) | ![Yolo Model](figures/inf_2_yolo.png) |
 ---
 
@@ -147,6 +149,7 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
   https://www.ultralytics.com/license
 
 > Third-party software and trademarks are subject to their respective licenses.
+
 
 
 
