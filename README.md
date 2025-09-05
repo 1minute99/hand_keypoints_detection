@@ -6,15 +6,13 @@
   <img src="https://img.shields.io/badge/inference-TensorRT-orange?logo=nvidia" />
 </p>
 
-## 🎞️ Demo GIF
+## 📌 Overview
+This project focuses on **hand keypoints detection with 21 landmarks**, using the official [Ultralytics Hand Keypoints dataset](https://docs.ultralytics.com/datasets/pose/hand-keypoints/).  
+The goal is to **outperform YOLO’s default keypoints model** by implementing a **custom heatmap-based approach** with MobileNetV3 as backbone and deploying it **End-to-End on Jetson Orin Nano** for real-time inference from a webcam.
 
 <p align="center">
   <img src="ezgif.com-crop.gif" width="400"/>
 </p>
-
-## 📌 Overview
-This project focuses on **hand keypoints detection with 21 landmarks**, using the official [Ultralytics Hand Keypoints dataset](https://docs.ultralytics.com/datasets/pose/hand-keypoints/).  
-The goal is to **outperform YOLO’s default keypoints model** by implementing a **custom heatmap-based approach** with MobileNetV3 as backbone and deploying it **End-to-End on Jetson Orin Nano** for real-time inference from a webcam.
 
 - **Key Features:**
   - Comparison between YOLO-based and Heatmap-based models.
@@ -156,6 +154,7 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
   https://www.ultralytics.com/license
 
 > Third-party software and trademarks are subject to their respective licenses.
+
 
 
 
