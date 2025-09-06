@@ -6,9 +6,7 @@
   <img src="https://img.shields.io/badge/inference-TensorRT-orange?logo=nvidia" />
 </p>
 
-<p align="center">
-  ![Demo GIF](ezgif.com-crop.gif)
-</p>
+![Demo GIF](ezgif.com-crop.gif)
 
 ## 📌 Overview
 This project focuses on **hand keypoints detection with 21 landmarks**, using the official [Ultralytics Hand Keypoints dataset](https://docs.ultralytics.com/datasets/pose/hand-keypoints/).  
@@ -154,6 +152,7 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
   https://www.ultralytics.com/license
 
 > Third-party software and trademarks are subject to their respective licenses.
+
 
 
 
