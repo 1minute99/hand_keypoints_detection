@@ -107,7 +107,7 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
 - **Accuracy**: Heatmap model outperforms YOLO (e.g., PCK@5px: 83.8% vs 77.2%).  
 - **Latency**: The Heatmap model is faster (19.35 ms vs 32.72 ms).  
 - **Deployment**: Heatmap model achieves real-time inference (>50 FPS).  
-- ⚡ **Conclusion**: Heatmap-based architecture with MobileNetV3 backbone is more **efficient and accurate** for hand keypoints detection on edge devices.  
+- **Conclusion**: Heatmap-based architecture with MobileNetV3 backbone is more **efficient and accurate** for hand keypoints detection on edge devices.  
 
 ---
 
@@ -154,6 +154,7 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
   https://www.ultralytics.com/license
 
 > Third-party software and trademarks are subject to their respective licenses.
+
 
 
 
