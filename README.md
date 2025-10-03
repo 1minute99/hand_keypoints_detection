@@ -23,8 +23,8 @@ The goal is to **outperform YOLO’s default keypoints model** by implementing a
 ---
 
 ## 🎥 Demo Videos
-- 🔹 [Custom Heatmap Model Demo](https://youtu.be/xINhHVZyG6A)  
-- 🔹 [YOLO Model Demo](https://youtu.be/2LqOoRhSFb8)  
+- [Custom Heatmap Model Demo](https://youtu.be/xINhHVZyG6A)  
+- [YOLO Model Demo](https://youtu.be/2LqOoRhSFb8)  
 
 ---
 
@@ -57,7 +57,7 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
 
 ## 🚀 Results
 
-### 🔹 Heatmap Model (TensorRT FP16)
+### Heatmap Model (TensorRT FP16)
 | Threshold | PCK |
 |-----------|------|
 | 1px       | 0.2065 |
@@ -76,7 +76,7 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
 
 ---
 
-### 🔹 YOLO Model (TensorRT FP16)
+### YOLO Model (TensorRT FP16)
 | Threshold | PCK |
 |-----------|------|
 | 1px       | 0.1498 |
@@ -104,9 +104,9 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
 ---
 
 ## 🔍 Comparative Analysis
-- ✅ **Accuracy**: Heatmap model outperforms YOLO (e.g., PCK@5px: 83.8% vs 77.2%).  
-- ✅ **Latency**: Heatmap model is faster (19.35 m🌁s vs 32.72 ms).  
-- ✅ **Deployment**: Heatmap model achieves real-time inference (>50 FPS).  
+- **Accuracy**: Heatmap model outperforms YOLO (e.g., PCK@5px: 83.8% vs 77.2%).  
+- **Latency**: The Heatmap model is faster (19.35 ms vs 32.72 ms).  
+- **Deployment**: Heatmap model achieves real-time inference (>50 FPS).  
 - ⚡ **Conclusion**: Heatmap-based architecture with MobileNetV3 backbone is more **efficient and accurate** for hand keypoints detection on edge devices.  
 
 ---
@@ -140,7 +140,7 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
 **Single-hand only (no hand detector stage)**  
    - **Current limitation**: The pipeline predicts keypoints **directly** without a preceding **hand detection** stage. If multiple hands appear, **only one** is handled reliably, and overlapping hands are not separated.  
    - **Plan**: Adopt a **two-stage** pipeline — (A) lightweight hand detector (e.g., YOLO-hand) → cropped ROI per hand, then (B) per-instance keypoints model on each ROI.  
-     - Alternative: **One-stage, multi-instance** approach with **instance-aware heatmaps** (e.g., associative embedding / tag heatmaps) to separate hands without an explicit detector.  
+     - Alternative: **One-stage, multi-instance** approach with **instance-aware heatmaps** (e.g., associative embedding/tag heatmaps) to separate hands without an explicit detector.  
      - Add **tracking** across frames (Hungarian matching on keypoint centroids / OKS) for stable multi-hand IDs.
 
 ---
@@ -154,6 +154,7 @@ We use **PCK (Percentage of Correct Keypoints)** as the primary accuracy metric:
   https://www.ultralytics.com/license
 
 > Third-party software and trademarks are subject to their respective licenses.
+
 
 
 
